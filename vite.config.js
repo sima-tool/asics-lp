@@ -1,5 +1,9 @@
+```javascript
 import { defineConfig } from 'vite'
+import { viteSingleFile } from "vite-plugin-singlefile"
 
 export default defineConfig({
-    base: '/asics-lp/', // Absolute path for GitHub Pages
+  plugins: [viteSingleFile()],
+  base: './', // Relative base is fine with singlefile
 })
+```
