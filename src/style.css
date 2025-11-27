@@ -378,3 +378,39 @@ footer {
   opacity: 1;
   transform: none;
 }
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  .hero-title .highlight {
+    font-size: 2.5rem;
+  }
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  .section {
+    padding: 60px 0;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .structure-part {
+    padding: 20px 30px;
+  }
+  .structure-part .code {
+    font-size: 2.5rem;
+  }
+  .card {
+    padding: 20px;
+  }
+  .example-row {
+    padding: 15px 20px;
+  }
+  .example-code {
+    font-size: 1.2rem;
+  }
+  .example-meaning {
+    font-size: 1rem;
+  }
+}
