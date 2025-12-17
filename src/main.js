@@ -1,4 +1,4 @@
-import './style.css';
+// CSS is loaded via link tag in HTML
 
 // Scroll Animation Observer
 const observerOptions = {
