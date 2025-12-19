@@ -379,14 +379,15 @@ ul {
 
 /* Examples */
 .examples-list {
-  max-width: 800px;
+  width: fit-content;
   margin: 0 auto;
 }
 
 .example-row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 30px;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 0%, transparent 100%);
   padding: 30px 50px;
   margin-bottom: 20px;
@@ -422,19 +423,49 @@ ul {
   font-size: 1.8rem;
   font-weight: 900;
   color: #fff;
+  min-width: 200px;
+  /* Fixed width to align arrows */
+  flex-shrink: 0;
 }
 
 .arrow {
   font-size: 2rem;
   color: var(--text-muted);
   opacity: 0.5;
+  flex-shrink: 0;
 }
 
 .example-meaning {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--accent-color);
   font-weight: 700;
   text-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+  text-align: left;
+  flex-grow: 1;
+}
+
+.meaning-list {
+  padding: 0;
+  margin: 0;
+}
+
+.meaning-list li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 1.5em;
+  line-height: 1.4;
+}
+
+.meaning-list li:last-child {
+  margin-bottom: 0;
+}
+
+.meaning-list li::before {
+  content: '・';
+  position: absolute;
+  left: 0;
+  color: var(--highlight-color);
+  font-weight: 900;
 }
 
 /* Footer */
